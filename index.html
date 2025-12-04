@@ -34,11 +34,19 @@
       padding: 20px 40px;
       border-radius: 20px;
     }
-    .logo {
+    .top-left {
       position: fixed;   /* stays in the top-left even when scrolling */
       top: 10px;         /* distance from top */
       left: 10px;        /* distance from left */
-      width: 80px;       /* adjust size as needed */
+      width: 200px;       /* adjust size as needed */
+      height: auto;      /* maintain aspect ratio */
+      z-index: 1000;     /* stays above other elements */
+    }
+    .top-right {
+      position: fixed;   /* stays in the top-right even when scrolling */
+      top: 10px;         /* distance from top */
+      right: 10px;       /* distance from right */
+      width: 200px;       /* adjust size as needed */
       height: auto;      /* maintain aspect ratio */
       z-index: 1000;     /* stays above other elements */
     }
@@ -71,7 +79,8 @@
         `${days}d ${hours}h ${minutes}m ${seconds}s`;
     }, 1000);
   </script>
-  <img src="bacardi.jpg" alt="Logo" class="logo">
+  <img src="bacardi.jpg" alt="Bacardi" class="top-left">
+  <img src="handcuffs.jpg" alt="Handcuffs" class="top-right">
 
 </body>
 
