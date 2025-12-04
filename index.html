@@ -34,6 +34,14 @@
       padding: 20px 40px;
       border-radius: 20px;
     }
+    .logo {
+      position: fixed;   /* stays in the top-left even when scrolling */
+      top: 10px;         /* distance from top */
+      left: 10px;        /* distance from left */
+      width: 80px;       /* adjust size as needed */
+      height: auto;      /* maintain aspect ratio */
+      z-index: 1000;     /* stays above other elements */
+    }
   </style>
 </head>
 <body>
@@ -63,6 +71,8 @@
         `${days}d ${hours}h ${minutes}m ${seconds}s`;
     }, 1000);
   </script>
+  <img src="bacardi.jpg" alt="Logo" class="logo">
+
 </body>
 
 </html>
